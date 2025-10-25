@@ -10,7 +10,7 @@ requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # ================================
 
 # ====== TARGET & CONFIG ======
-target_url = "https://target-website.com"  # GANTI INI!
+target_url = "https://api.deline.my.id/berita/antara"  # GANTI INI!
 use_proxy = False  # Set True kalau mau pakai proxy/Socks5
 proxy_list = []  # Isi dengan proxy/Socks5 (opsional)
 # =============================
