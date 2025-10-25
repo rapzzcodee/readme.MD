@@ -7,7 +7,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 # Target URL (ganti dengan URL target lo)
-target_url = "https://api.deline.my.id/berita/antara"
+target_url = "https://api.siputzx.my.id/api/ai/gemini-lite?prompt=What%20is%20the%20capital%20of%20France%3F&model=gemini-2.0-flash-lite"
 
 # List of fake user agents to bypass basic detection
 user_agents = [
